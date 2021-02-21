@@ -234,11 +234,6 @@ const Repository = () => {
               color="#26ca7e"
               extraText={(license && license.name) || ''}
             ></ListItem>
-            {/* <AtListItem
-              hasBorder={true}
-              title="Pull requests"
-              extraText={default_branch}
-            ></AtListItem> */}
           </AtList>
         </View>
 

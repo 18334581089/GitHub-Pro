@@ -67,6 +67,13 @@ interface Author {
   date: string
 }
 
+export default ({ full_name }, params = {}) => {
+  return request.get<CommitItemData[] | null>(
+    `/repos/${full_name}/commits`,
+    params
+  )
+}
+
 export const getCommits = ({ full_name }, params = {}) => {
   return request.get<CommitItemData[] | null>(
     `/repos/${full_name}/commits`,
